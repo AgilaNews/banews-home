@@ -1,289 +1,543 @@
-html {
-	transform: body scale(0.5);
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	font-size: 40px
+@media print {
+	@page {
+		size: portrait
+	}
 }
 
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+body,
+button,
+dd,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+li,
+p,
+ul {
 	margin: 0;
-	padding: 0
+	padding: 0;
+	list-style: none;
+	vertical-align: middle
 }
 
-div {
-	display: block
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+	font-weight: 400;
+	font-style: normal
+}
+
+img {
+	border: 0
 }
 
 body {
-	
-	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	font-family: Futura, Helvetica, Arial, sans-serif;
+	color: #fff;
+	max-width: 1440px;
+	margin: 0 auto;
 	background-color: #fff
 }
 
-ul{
-	list-style: none;
+.section {
+	height: 552px
+}
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 100%;
+}
+
+.col-1-2 {
+	/*width: 50%;*/
+}
+
+#features .left {
 	float: left;
 }
 
-#main {
-	width: 100%;
-	height: 100%;
-	margin: auto auto
+#features .right {
+	float: right;
 }
+
 
 #header {
-	height: 285px;
-	width: 100%;
-	background: #fff url(http://s1.agilanews.today/www/header.png) no-repeat center 0;
+	background: url(http://s1.agilanews.today/www/Manila.jpg)top no-repeat;
 	background-size: cover;
+	position: relative
 }
 
-.magnifer {
-	background: transparent url(http://s1.agilanews.today/www/magnifer.png) no-repeat center 0;
-	position: absolute;
-	z-index: 999;
-	float: right;
-	width: 128px;
-	height: 130px;
-	background-size: 128px 130px;
-	float: left;
-	margin: -70px 0 0 500px
+
+#header .badges {
+	margin-top: 40px;
+	cursor: pointer
 }
 
-#slogan {
-	height: 365px;
-	background-color: #ff8700;
-	background-size: cover;
-	margin: 0 0 35px 0
+#header .badges img {
+	width: 20.1%;
+	border-radius: 20px;
+	background: rgba(0,0,0,.8);
+}
+#download .googleplay img,
+#download .appstore img{
+	border: 1px solid #FFFFFF;
+	border-radius: 20px;
+	background: rgba(0,0,0,.8);
+}
+#header .badges span {
+	font-size: 30px
 }
 
-.title {
-	font-family: "Arial Black", Helvetica, monospace, sans-serif, arial;
-	font-size: 39px;
-	text-align: center;
-	line-height: 30px;
-	padding: 69px 50px 18px 50px
+#header .badges a.googleplay {
+	margin-left: 10px
 }
 
-.subtitle {
-	font-family: "Arial Regular", Helvetica, monospace, sans-serif, arial;
-	font-weight: 100;
-	margin: 0 58px 0 58px;
-	font-size: 18px;
-	line-height: 43px;
+.intro {
+	padding-top: 180px;
+	text-align: center
+}
+
+.intro .description {
 	text-align: left;
-	width: 604px;
-	text-align: justify;
-	text-justify: inter-ideograph
+	position: relative;
+	display: inline-block;
+	padding-left: 105px
 }
 
-#title_main {
-	width: 720px;
-	height: 230px;
-	margin: 0 auto
+.intro .main {
+	font-size: 52px;
+	line-height: 68px
 }
 
-.content1,
-.content2,
-.content3,
-.subtitle,
-.title {
-	color: #fff;
-	word-break: keep-all;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	hyphens: auto;
-	-webkit-hyphens: auto;
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	-ms-hyphens: auto;
+.intro .sub {
+	margin-top: 10px;
+	font-size: 26px;
+	font-family: Roboto,Helvetica;
+	line-height: 42px
 }
 
-.goolePlay {
-	display: block;
-	margin-left: 137px;
-	margin-right: 45px;
-}
-.iOS{
-	display: block;
-	margin-left: 45px;
-}
-#googleplay {
-	background: #000 url(http://s1.agilanews.today/www/google-play.png) no-repeat center center;
-	height: 58px;
-	width: 177px;
-	border-radius: 10px;
-	cursor: pointer;
-	margin: auto;
-}
-#ios{
-	background: #000 url(http://s1.agilanews.today/www/appstore.png) no-repeat center center;
-	height: 60px;
-	width: 178px;
-	border-radius: 10px;
-	cursor: pointer;
-	margin: 0 auto;
-}
-.shadow {
-	height: 20px;
-	margin: 5px auto;
-	opacity: .27;
-	background: radial-gradient(ellipse farthest-corner,black 12%, #ff8700 65%);
-	background: -webkit-radial-gradient(ellipse farthest-corner,black 12%, #ff8700 65%);
-	background: -o-radial-gradient(ellipse farthest-corner,black 12%, #ff8700 65%);
-	background: -moz-radial-gradient(ellipse farthest-corner,black 12%, #ff8700 65%);
+.logo {
+	width: 116px;
+	height: 116px;
+	background: url(http://s1.agilanews.today/www/icon.png)no-repeat 50% center;
+	background-size: cover;
+	position: absolute;
+	left: -35px
 }
 
-#main_content {
-	width: 720px;
-	height: 100%;
-	margin: 0 auto;
-	overflow: auto
+.center {
+	text-align: center
 }
 
-.getnow {
-	text-align: center;
-	font-size: 25px;
-	font-weight: 400
+#features .section {
+	overflow: hidden;
 }
 
-.content1 {
-	height: 441px;
+#features .right-container {
+	margin: 0 20px 0 auto;
+	text-align: right
 }
 
-.content2 {
-	height: 444px
+#features .description-container {
+	text-align: left;
+	display: inline-block;
+	width: 500px;
+}
+.section{
+	padding: 0 15px;
 }
 
-.content3 {
-	height: 448px
+.line{
+	margin-top: 170px;
+	width: 40px;
+	height: 0;
+	border: 3px solid #ff8800;
 }
-
-.content1_left,
-.content2_right,
-.content3_left {
-	width: 430px;
-	display: inline;
-	position: absolute
+.color{
+	margin-top: 170px;
+	width: 40px;
+	height: 0;
+	border: 3px solid #FFFFFF;
 }
-
-.content1_left {
-	margin: 134px 0 0 0
-}
-
-.content2_right {
-	margin: 178px 0 0 0
-}
-
-.content3_left {
-	width: 380px;
-	margin: 169px 0 0 0
-}
-
-.content1_left,
-.content2_left,
-.content3_left {
-	float: left
-}
-
-.content1_right,
-.content2_right,
-.content3_right {
-	float: right
-}
-
-.content1_title,
-.content2_title,
-.content3_title {
-	font-family: "Arial Black";
-	font-size: 20px;
-	color: #ff8700;
-	line-height: 25px
-}
-
-.content1_content,
-.content2_content,
-.content3_content,
-#footer {
-	font-family: "Arial Regular", Helvetica, monospace, sans-serif, arial;
-	margin-top: 8px;
-	font-size: 16px;
-	color: #575757;
-	line-height: 30px;
-	text-align: justify;
-	text-justify: inter-ideograph
-}
-
-.content1_right,
-.content2_left,
-.content3_right {
-	width: 226px;
-	height: 440px;
-	display: inline;
-	background-size: 226px 441px
-}
-
-.icon1,
-.icon2,
-.icon3 {
-	width: 65px;
-	height: 66px;
-	position: absolute
-}
-
-.icon1 {
-	background: transparent url(http://s1.agilanews.today/www/circle.png) no-repeat center;
-	margin: 87px 0 0 35px
-}
-
-.icon2 {
-	background: transparent url(http://s1.agilanews.today/www/iconnews.png) no-repeat center;
-	margin: 136px 0 0 332px
-}
-
-.icon3 {
-	background: transparent url(http://s1.agilanews.today/www/iconpeople.png) no-repeat center;
-	margin: 124px 0 0 25px
-}
-
-.content1_right {
-	background: transparent url(http://s1.agilanews.today/www/phone1.png) no-repeat center;
-	background-size: 226px 441px;
-	width: 226px;
-	height: 441px;
-	margin: 0 0 0 68px
-}
-
-.content2_left {
-	background: transparent url(http://s1.agilanews.today/www/phone2.png) no-repeat center;
-	background-size: 285px 444px;
-	width: 285px;
-	margin-top: -10px
-}
-
-.content3_right {
-	background: transparent url(http://s1.agilanews.today/www/phone3.png) no-repeat center;
-	background-size: 276px 448px;
-	width: 276px;
-	height: 448px;
-	margin: -25px 0 0 90px
-}
-
-.capitalize {
-	font-size: 54px;
-	display: inline-block
-}
-
-#footer {
-	margin: 35px 0 25px 0;
-	width: 100%;
-	height: 40px;
+.section h2 {
+	margin-top: 48px;
+	padding-bottom: 34px;
+	font-size: 40px;
 	line-height: 40px;
-	background-color: #efefef;
-	color: #b5b5b5;
-	text-align: center;
-	font-size: 12px
+	font-family: Helvetica;
+	font-weight: bold;
+}
+
+#features-set-1 h2,
+#features-set-3 h2
+{
+	color: #ff8800;
+}
+#features-set-2 h2,
+#features-set-4 h2
+{
+	color: #FFFFFF;
+}
+
+#features .item {
+	min-height: 52px
+}
+
+#features .description {
+	position: relative
+}
+
+#features .detail {
+	font-size: 24px;
+	line-height: 42px;
+	font-family: Helvetica;
+	font-weight: normal;
+}
+
+#features-set-1 .detail,
+#features-set-3 .detail
+{
+	color: #ff8800;
+}
+
+#features-set-2 .detail,
+#features-set-4 .detail
+{
+	color: #FFFFFF;
+}
+
+#features a.googleplay {
+	margin-left: 40px
+}
+#header .badges a.googleplay{
+	margin-left: 20px
+}
+.feature-img {
+	padding: 165px 0 0 0
+}
+
+.feature-img img {
+	width: 300px;
+	border-radius: 40px 40px 0 0;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, .5)
+}
+
+#features-set-1,
+#features-set-3
+{
+	background-color: #f2ebe3;
+}
+
+#features-set-2,
+#features-set-4
+{
+	background-color: #ff8800;
+}
+
+#download {
+	background-color: #000
+}
+
+#download a {
+	width: 19.7%;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 124px
+}
+
+#download img {
+	width: 100%;
+	vertical-align: middle
+}
+
+#download span {
+	font-size: 30px
+}
+
+#footer {
+	background-color: #f7f7f7;
+	text-align: right;
+}
+
+#footer span{
+	display: inline-block;
+	color: #333;
+	vertical-align: middle;	
+}
+#footer a{
+	text-decoration: none;
+}
+#footer .footer-container {
+	overflow: hidden
+}
+
+#footer .copyright {
+	font-size: 24px;
+	line-height: 80px;
+	color: #b2b2b2;
+	padding: 0 15px;
+	font-family: Helvetica;
+}
+#footer .gp{
+	width: 36px;
+	height: 36px;
+	margin-left: 20px;
+	background: url(http://s1.agilanews.today/www/google-play.png) no-repeat;
+	background-size: 100%;
+}
+#footer .twitter{
+	width: 36px;
+	height: 36px;
+	margin-left: 20px;
+	background: url(http://s1.agilanews.today/www/icon_twitter.png) no-repeat;
+	background-size: 100%;
+}
+#footer .facebook{
+	width: 36px;
+	height: 36px;
+	margin-left: 30px;
+	background: url(http://s1.agilanews.today/www/icon_facebook.png) no-repeat;
+	background-size: 100%;
+}
+@media (max-width:880px) {
+	.section {
+		height: 776px;
+		padding: 0 30px;
+	}
+	#header {
+		height: 1024px;
+		background-image: url(http://s1.agilanews.today/www/Manila.jpg)
+	}
+	#header .badges {
+		margin-top: 100px
+	}
+	#header .badges img {
+		width: 40.4%
+	}
+	#footer{
+		text-align: center;
+	}
+	.logo {
+		display: inline-block;
+		width: 224px;
+		height: 224px;
+		position: static;
+		margin-bottom: 30px
+	}
+	.intro {
+		padding-top: 230px
+	}
+	.intro .description {
+		text-align: center;
+		padding-left: 0
+	}
+	.intro .main {
+		font-size: 43px;
+		line-height: 56px
+	}
+	.intro .sub {
+		font-size: 27px;
+		line-height: 35px;
+		font-size: 27px;
+		font-family: Roboto,Helvetica;
+	}
+	
+	#features-set-1 .col-1-2,
+	#features-set-3 .col-1-2
+	{
+		width: 100%;
+		float: none;
+	}
+	
+	#features-set-2 .col-1-2,
+	#features-set-4 .col-1-2
+	{
+		width: 100%;
+		float: none;
+	}
+
+	#features .right-container {
+		margin: 0;
+		text-align: left
+	}
+	#features .description-container {
+		width: 100%
+	}
+	#features h2 {
+		font-size: 34px;
+		margin-top: 36px;
+		line-height: 60px;
+		padding-bottom: 0
+	}
+	#features .item {
+		margin-top: 20px
+	}
+	.color,
+	.line{
+		margin-top: 150px;
+	}
+	.feature-img {
+		padding: 60px 104px 0 0;
+		text-align: right
+	}
+	.feature-img img {
+		width: 265px
+	}
+	#download a {
+		line-height: 160px;
+		width: 35.9%
+	}
+	#footer .footer-container {
+		line-height: 80px;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		-webkit-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		-webkit-box-pack: end;
+		-webkit-justify-content: flex-end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+		box-sizing: border-box
+	}
+	
+	#footer .copyright {
+		font-size: 24px;
+		line-height: 80px;
+		color: #b2b2b2;
+		font-family: Helvetica Neue, Helvetica;
+	}
+}
+@media (max-width: 500px) {
+	#features .detail{
+		font-size: 21px;
+	}
+}
+@media (max-width:435px) {
+	.section {
+		height: 536px;
+		padding: 0 30px;
+	}
+	#header {
+		height: 667px;
+		background-image: url(http://s1.agilanews.today/www/Manila.jpg)
+	}
+	#header .badges {
+		margin-top: 45px
+	}
+	#header .badges a {
+		margin-bottom: 10px
+	}
+	#header .badges img {
+		width: 50.4%
+	}
+	#header .badges span {
+		display: none
+	}
+	#header .badges a.googleplay {
+		margin-left: 0
+	}
+	
+	.intro {
+		padding-top: 153px
+	}
+	.intro .main {
+		font-size: 28px;
+		line-height: 36px
+	}
+	.intro .sub {
+		font-size: 20px;
+		line-height: 26px
+	}
+	.logo {
+		width: 128px;
+		height: 128px;
+		margin-bottom: 10px
+	}
+	#features .right-container {
+		margin-left: 50px
+	}
+	.line,
+	.color
+	{
+		margin-top: 120px;
+		width: 20px;
+	}
+	.line{
+		border: 2px solid #FF8800;
+	}
+	.color{
+		border: 2px solid #FFFFFF;
+	}
+	#features h2 {
+		font-size: 20px;
+		line-height: 20px;
+		margin-top: 21px;
+	}
+	#features .description {
+		width: 225px;
+	}
+	#features .item {
+		margin-top: 21px;
+		margin-bottom: 21px;
+	}
+	
+	#features .detail {
+		font-size: 12px;
+		line-height: 20px;
+		font-weight: normal;
+	}
+	#features .feature-img {
+		padding: 0px 0px 0 0;
+		text-align: center;
+	}
+	#features .feature-img img {
+		width: 203px
+	}
+	#features a.googleplay{
+		margin-left: 0;
+	}
+	#download {
+		height: 200px;
+		box-sizing: border-box;
+		padding-top: 30px
+	}
+	#download a {
+		width: 50.4%;
+		line-height: normal;
+		margin-bottom: 10px
+	}
+	#download span {
+		display: none
+	}
+	#footer .footer-container {
+		padding: 9px 0;
+		box-sizing: border-box
+	}
+	#footer .copyright {
+		font-size: 24px;
+		line-height: 80px
+	}
+	#footer{
+		text-align: center;
+	}
 }
