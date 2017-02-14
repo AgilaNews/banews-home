@@ -327,7 +327,8 @@ body {
 		padding: 0 30px;
 	}
 	#header {
-		height: 1024px;
+		height: 2208px;
+		height: 100vh;
 		background-image: url(http://s1.agilanews.today/www/Manila.jpg)
 	}
 	#header .badges {
@@ -347,7 +348,7 @@ body {
 		margin-bottom: 30px
 	}
 	.intro {
-		padding-top: 230px
+		padding-top: 33%
 	}
 	.intro .description {
 		text-align: center;
